@@ -1,3 +1,7 @@
-h1{
-  font-size: indie Flower;
+.encabezado{
+  background-color: rgba(51, 58, 64, 1);
+  color: white;
+}
+#tablaCafe{
+  padding-left: 3%;
 }

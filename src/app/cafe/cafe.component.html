@@ -1,8 +1,8 @@
-<div class="container-fluid">
+<div class="container-fluid" id="tablaCafe">
   <div class="col-6">
     <table class="table">
       <thead>
-        <tr>
+        <tr class="encabezado">
           <th class="h4">#</th>
           <th class="h4">Nombre</th>
           <th class="h4">Tipo</th>
@@ -12,7 +12,7 @@
       <tbody>
         <tr *ngFor="let c of cafes">
           <td>
-            <dd>{{c.id}}</dd>
+            <dd style="font-weight: bold;">{{c.id}}</dd>
           </td>
           <td>
             <dd>{{c.nombre}}</dd>
@@ -26,5 +26,7 @@
         </tr>
       </tbody>
     </table>
+    <p>Total café de origen {{contOrigen}}</p>
+    <p>Total café blend {{contBlend}}</p>
   </div>
 </div>

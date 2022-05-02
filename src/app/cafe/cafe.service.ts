@@ -11,7 +11,7 @@ export class CafeService {
   private url: string = environment.baseUrl + '202212_MISW4104_Grupo3.json';
 
   constructor(private http: HttpClient) { }
-  getCafes(): Observable<Cafe>{
-    return this.http.get<Cafe>(this.url)
+  getCafes(): Observable<Cafe[]>{
+    return this.http.get<Cafe[]>(this.url)
   }
 }
